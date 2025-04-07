@@ -3,38 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Everyday - Turn your habits into beautiful visual journals</title>
+  <title>Momentum - Turn your habits into beautiful visual journals</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,701,900,901&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Satoshi', sans-serif;
-    }
-
-    .text-primary-color{
-      color: #FE3C01;
-    }
-
-    .text-content-primary{
-      color: #000;
-    }
-
-    .text-content-secondary{
-      color: #555;
-    }
-
-    .text-content-tertiary{
-      color: #AAA;
-    }
-
-    .bg-primary-color{
-      background-color: #FE3C01;
-    }
-
-    .bg-tertiary-color{
-      background-color: #EEE;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="bg-white text-gray-900">
 
@@ -45,7 +17,7 @@
       <!-- Logo -->
       <div class="flex items-center">
         <div class="w-10 h-10 bg-primary-color rounded-full mr-3"></div>
-        <span class="font-black text-xl">Everyday</span>
+        <span class="font-black text-xl">Momentum</span>
       </div>
 
       <!-- Waitlist button -->
@@ -59,11 +31,11 @@
     <section class="pt-[64px]">
       <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between">
         <div class="flex justify-center w-full">
-          <img src="images/hero.png" alt="Everyday app screenshot" class="max-w-100 h-auto">
+          <img src="images/hero.png" alt="Momentum app screenshot" class="max-w-100 h-auto">
         </div>
         <div class="w-full text-center pt-5">
           <h1 class="text-6xl font-black leading-tight mb-4">turn your habits into<br><span class="text-primary-color">beautiful visual journals.</span></h1>
-          <p class="text-2xl leading-[1.65] text-content-secondary pb-10">With Everyday, snap a photo to track habit you want to build — and watch your progress turn into <span class="font-bold">a shareable video.</span></p>
+          <p class="text-2xl leading-[1.65] text-content-secondary pb-10">With Momentum, snap a photo to track habit you want to build — and watch your progress turn into <span class="font-bold">a shareable video.</span></p>
           <button class="bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">Join waitlist</button>
         </div>
       </div>
@@ -126,10 +98,10 @@
             <img src="images/different_sec_divider.svg" alt="Create a habit screenshot" class=" h-auto mb-[72px] justify-self-center">
 
             <!-- Title -->
-            <h2 class="text-5xl leading-[1.30] font-black text-content-primary">how is Everyday different?</h2>
+            <h2 class="text-5xl leading-[1.30] font-black text-content-primary">how is Momentum different?</h2>
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-[72px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-[72px]">
           <!-- Habit: 1 -->
           <div class="text-center">
 
@@ -183,7 +155,7 @@
             <h3 class="font-black text-4xl mb-1">a visual calendar</h3>
 
             <!-- Subtitle -->
-            <p class="text-content-secondary text-base">See the days you showed up— no streaks, no guilt.</p>
+            <p class="text-content-secondary text-base">See the days you showed up.</p>
           </div>
 
 
@@ -233,28 +205,217 @@
       </div>
       
 
-      <div class="max-w-4xl mx-auto px-6">
-        <div class="flex flex-wrap justify-center gap-4 mt-10">
+      <div class="overflow-hidden mt-10 px-6 mx-auto">
+        <div class="marquee-track flex gap-4 w-max animate-marquee">
 
           <!-- Habit card -->
-          <div class="w-45 h-45 bg-white rounded-2xl shadow p-5 flex flex-col justify-between">
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
             <!-- Icon -->
-            <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-xl">
-              👨‍🍳
+            <div class="w-10 h-10 rounded-full bg-lime-green flex items-center justify-center text-xl">
+              🏋️‍♀️
             </div>
           
             <!-- Text -->
-            <div class="text-black font-semibold text-2xl leading-snug">
-              Cook one<br>meal
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Workout daily
             </div>
           </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-neon-purple flex items-center justify-center text-xl">
+              🧑‍🍳
+            </div>
           
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-red-500">Clean one closet</span>
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-orange-400">Water plants</span>
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-blue-400">Meditation</span>
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-green-400">Outside everyday</span>
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-pink-500">Skin progress</span>
-          <span class="px-6 py-2 rounded-full text-white font-medium bg-teal-400">One line journal</span>
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Cook one meal
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-vivid-red flex items-center justify-center text-xl">
+              ✉️
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Inbox <br>zero
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-deep-orange flex items-center justify-center text-xl">
+              🌅
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Watch the sunrise
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center text-xl">
+              ✍️
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Doodle something
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sun-yellow flex items-center justify-center text-xl">
+              🪜
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Take <br>stairs
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-hot-pink flex items-center justify-center text-xl">
+              🚶
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Walk after dinner
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center text-xl">
+              📒
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              One line journal
+            </div>
+          </div>
+
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-lime-green flex items-center justify-center text-xl">
+              🏋️‍♀️
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Workout daily
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-neon-purple flex items-center justify-center text-xl">
+              🧑‍🍳
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Cook one meal
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-vivid-red flex items-center justify-center text-xl">
+              ✉️
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Inbox <br>zero
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-deep-orange flex items-center justify-center text-xl">
+              🌅
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Watch the sunrise
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center text-xl">
+              ✍️
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Doodle something
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sun-yellow flex items-center justify-center text-xl">
+              🪜
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Take <br>stairs
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-hot-pink flex items-center justify-center text-xl">
+              🚶
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              Walk after dinner
+            </div>
+          </div>
+
+          <!-- Habit card -->
+          <div class="w-[180px] h-[180px] border p-5 bg-white rounded-3xl  flex flex-col justify-between">
+            <!-- Icon -->
+            <div class="w-10 h-10 rounded-full bg-sky-blue flex items-center justify-center text-xl">
+              📒
+            </div>
+          
+            <!-- Text -->
+            <div class="text-black font-bold text-2xl leading-[1.25]">
+              One line journal
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -268,7 +429,7 @@
 
         <!-- Waitlist section title and subtitle -->
         <h2 class="text-5xl leading-[1.65] font-black text-content-primary">get early access</h2>
-        <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Be the first to try Everyday. No spam. <br>
+        <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Be the first to try Momentum. No spam. <br>
             Just a personal invite when it’s ready.</p>
 
         <!-- Waitlist button -->
