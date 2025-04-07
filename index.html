@@ -23,6 +23,10 @@
         color: #555;
     }
 
+    .text-content-tertiary{
+        color: #AAA;
+    }
+
     .bg-primary-color{
         background-color: #FE3C01;
     }
@@ -48,56 +52,65 @@
   <main>
 
     <!-- Hero section  -->
-    <section class="pt-[72px]">
-      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between gap-12">
+    <section class="pt-[64px]">
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between">
         <div class="flex justify-center w-full">
           <img src="images/hero.png" alt="Everyday app screenshot" class="max-w-100 h-auto">
         </div>
         <div class="w-full text-center pt-5">
-          <h1 class="text-5xl font-black leading-tight mb-4">turn your habits into<br><span class="text-primary-color">beautiful visual journals.</span></h1>
-          <p class="text-xl text-gray-600 mb-10">With Everyday, snap a photo to track habit you want to build — and watch your progress turn into a shareable video.</p>
+          <h1 class="text-6xl font-black leading-tight mb-4">turn your habits into<br><span class="text-primary-color">beautiful visual journals.</span></h1>
+          <p class="text-2xl leading-[1.65] text-content-secondary pb-10">With Everyday, snap a photo to track habit you want to build — and watch your progress turn into <span class="font-bold">a shareable video.</span></p>
           <button class="bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">Join waitlist</button>
         </div>
       </div>
     </section>
 
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-col items-center justify-between gap-12">
-        <div class="w-full lg:w-1/2">
-          <h2 class="text-3xl font-bold mb-4 text-left">create a habit</h2>
-          <p class="text-gray-600">Pick something you want to stick to — say "Workout", "Tidy Desk", or "Journal".</p>
+    <!-- How it works  -->
+    <section class="mt-[150px]">
+
+      <!-- How it works - Divider  -->
+      <div class="max-w-[720px] mx-auto flex flex-row lg:flex-row items-center justify-center gap-5 pb-[48px]">
+
+        <img src="images/how_it_works_divider_1.svg" alt="Create a habit screenshot" class="h-auto">
+
+        <p class="text-2xl font-bold uppercase leading-[1.30] text-content-tertiary">How it works</p>
+
+        <img src="images/how_it_works_divider_2.svg" alt="Create a habit screenshot" class="h-auto">
+      </div>
+
+      <!-- How it works - 1  -->
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between">
+        <div class="w-full text-center">
+          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">create a habit</h2>
+          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Pick something you want to stick to — say "Workout",<br> "Tidy Desk", or "Journal".</p>
         </div>
-        <div class="w-full lg:w-1/2 flex justify-center">
-          <img src="images/how_it_works_1.png" alt="Create a habit screenshot" class="max-w-full h-auto">
+        <div class="w-full flex justify-center">
+          <img src="images/how_it_works_1.png" alt="Create a habit screenshot" class="pt-6 max-w-full h-auto">
         </div>
       </div>
-    </section>
 
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-col items-center justify-between gap-12">
-        <div class="w-full lg:w-1/2">
-          <h2 class="text-3xl font-bold mb-4 text-left">snap a photo<br>when you show up</h2>
-          <p class="text-gray-600">No pressure to be perfect. Upload the visual proof as is.</p>
+      <!-- How it works - 2  -->
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[120px]">
+        <div class="w-full text-center">
+          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">snap a photo<br>when you show up</h2>
+          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">No pressure to be perfect. Upload the visual proof as is.</p>
         </div>
-        <div class="w-full lg:w-1/2 flex justify-center">
-          <img src="images/how_it_works_2.png" alt="Snap a photo screenshot" class="max-w-full h-auto">
+        <div class="w-full flex justify-center">
+          <img src="images/how_it_works_2.png" alt="Snap a photo screenshot" class="pt-6 max-w-full h-auto">
         </div>
       </div>
-    </section>
 
-    <section class="py-20">
-      <div class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-col items-center justify-between gap-12">
-        <div class="w-full lg:w-1/2">
-          <h2 class="text-3xl font-bold mb-4 text-left">watch your progress<br>come to life</h2>
-          <p class="text-gray-600">Every photo gets stitched into a timeline.<br>Turn it into a video whenever you want.</p>
+      <!-- How it works - 3  -->
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[120px]">
+        <div class="w-full text-center">
+          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">watch your progress<br>come to life</h2>
+          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Every photo gets stitched into a timeline.<br>Turn it into a video whenever you want.</p>
         </div>
-        <div class="w-full lg:w-1/2 flex justify-center">
-          <img src="images/how_it_works_3.png" alt="Progress timeline screenshot" class="max-w-full h-auto">
+        <div class="w-full flex justify-center">
+          <img src="images/how_it_works_3.png" alt="Progress timeline screenshot" class="pt-6 max-w-full h-auto">
         </div>
       </div>
-    </section>
 
-    <section class="py-10 border-t border-b border-gray-200 bg-[url('data:image/svg+xml;utf8,<svg width=\"1440\" height=\"36\" viewBox=\"0 0 1440 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1 18C96.5 10.5 347.6 -1.19209e-06 720 -1.19209e-06C1092.4 -1.19209e-06 1343.5 10.5 1439 18C1343.5 25.5 1092.4 36 720 36C347.6 36 96.5 25.5 1 18Z\" stroke=\"%23EAEAEA\"/></svg>')] bg-no-repeat bg-center">
     </section>
 
     <section class="py-20">
