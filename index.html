@@ -12,9 +12,8 @@
 <body class="bg-white text-gray-900">
 
   <!-- Nav bar -->
-  <header class="pt-12">
-    <div class="max-w-[720px] mx-auto px-6 flex justify-between items-center">
-
+  <header class="pt-8 lg:pt-12 staggered-fade" style="--delay: 140ms">
+    <div class="max-w-[720px] mx-auto px-4 flex justify-between items-center" style="--i: 0;">
       <!-- Logo -->
       <div class="flex items-center">
         <div class="w-10 h-10 bg-primary-color rounded-full mr-3"></div>
@@ -27,41 +26,44 @@
         class="bg-black text-white font-bold px-5 py-2 rounded-full hover:opacity-80 transition">
         Join waitlist
       </button>
-
     </div>
   </header>
 
-  <main>
-
-    <!-- Hero section  -->
-    <section class="pt-[64px]">
-      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between">
-        <div class="flex justify-center w-full">
-          <img src="images/hero.png" alt="Momentum app screenshot" class="max-w-100 h-auto">
-        </div>
-        <div class="w-full text-center pt-5">
-          <h1 class="text-6xl font-black leading-tight mb-4">turn your habits into<br><span class="text-primary-color">beautiful visual journals.</span></h1>
-          <p class="text-2xl leading-[1.65] text-content-secondary pb-10">With Momentum, snap a photo to track habit you want to build — and watch your progress turn into <span class="font-bold">a shareable video.</span></p>
-          
-          <button 
-            data-tally-open="3y1Ogx" 
-            class="mt-[72px] bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">
-            Join waitlist
-          </button>
-
-        </div>
+  <!-- Hero section  -->
+  <section class="max-w-[752px] pt-[64px] justify-self-center staggered-fade " style="--delay: 140ms">
+    <!-- Hero image -->
+    <div class="max-w-[720px] mx-auto flex flex-col items-center justify-between" style="--i: 1;">
+      <div class="flex justify-center w-full">
+        <img src="images/hero.png" alt="Momentum app screenshot" class="max-w-100 h-auto">
       </div>
-    </section>
+    </div>
+
+    <!-- Hero text -->
+    <div class="max-w-[752px] w-full text-center pt-5 px-4" style="--i: 2;">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.30] sm:leading-[1.30] lg:leading-[1.30] pb-4">
+        turn your habits into beautiful <span class="text-primary-color">visual journals.</span>
+      </h1>
+      <p class="text-xl sm:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] text-content-secondary pb-10">
+        With Momentum, snap a photo to track habit you want to build — and watch your progress turn into 
+        <span class="font-bold">a shareable video.</span>
+      </p>
+      <button 
+        data-tally-open="3y1Ogx" 
+        class="bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">
+        Join waitlist
+      </button>
+    </div>
+  </section>
 
     <!-- How it works  -->
-    <section class="mt-[150px]">
+    <section class="mt-[150px] px-4">
 
       <!-- How it works - Divider  -->
       <div class="max-w-[720px] mx-auto flex flex-row lg:flex-row items-center justify-center gap-5 pb-[48px]">
 
         <img src="images/how_it_works_divider_1.svg" alt="Create a habit screenshot" class="h-auto">
 
-        <p class="text-2xl font-bold uppercase leading-[1.30] text-content-tertiary">How it works</p>
+        <p class="text-lg sm:text-xl lg:text-2xl font-bold uppercase leading-[1.30] text-content-tertiary">How it works</p>
 
         <img src="images/how_it_works_divider_2.svg" alt="Create a habit screenshot" class="h-auto">
       </div>
@@ -69,8 +71,10 @@
       <!-- How it works - 1  -->
       <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between">
         <div class="w-full text-center">
-          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">create a habit</h2>
-          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Pick something you want to stick to — say "Workout",<br> "Tidy Desk", or "Journal".</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.30] sm:leading-[1.30] lg:leading-[1.30] font-black text-content-primary">create a habit</h2>
+          <p class="text-lg sm:text-xl lg:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] pt-4 text-content-secondary">
+            Pick something you want to stick to — say "Workout",<span class="hidden lg:inline"><br></span> "Tidy Desk", or "Journal".
+          </p>
         </div>
         <div class="w-full flex justify-center">
           <img src="images/how_it_works_1.png" alt="Create a habit screenshot" class="pt-6 max-w-full h-auto">
@@ -78,10 +82,12 @@
       </div>
 
       <!-- How it works - 2  -->
-      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[120px]">
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[84px] lg:pt-[120px]">
         <div class="w-full text-center">
-          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">snap a photo<br>when you show up</h2>
-          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">No pressure to be perfect. Upload the visual proof as is.</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.30] sm:leading-[1.30] lg:leading-[1.30] font-black text-content-primary">snap a photo<br>when you show up</h2>
+          <p class="text-lg sm:text-xl lg:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] pt-4 text-content-secondary">
+            No pressure to be perfect. Upload the visual proof as is.
+          </p>
         </div>
         <div class="w-full flex justify-center">
           <img src="images/how_it_works_2.png" alt="Snap a photo screenshot" class="pt-6 max-w-full h-auto">
@@ -89,10 +95,12 @@
       </div>
 
       <!-- How it works - 3  -->
-      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[120px]">
+      <div class="max-w-[720px] mx-auto flex flex-col lg:flex-col items-center justify-between pt-[84px] lg:pt-[120px]">
         <div class="w-full text-center">
-          <h2 class="text-5xl leading-[1.30] font-black text-content-primary">watch your progress<br>come to life</h2>
-          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Every photo gets stitched into a timeline.<br>Turn it into a video whenever you want.</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.30] sm:leading-[1.30] lg:leading-[1.30] font-black text-content-primary">watch your progress<br>come to life</h2>
+          <p class="text-lg sm:text-xl lg:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] pt-4 text-content-secondary">
+            Every photo gets stitched into a timeline.<span class="hidden lg:inline"><br></span> Turn it into a video whenever you want.
+          </p>
         </div>
         <div class="w-full flex justify-center">
           <img src="images/how_it_works_3.png" alt="Progress timeline screenshot" class="pt-6 max-w-full h-auto">
@@ -102,18 +110,18 @@
     </section>
 
     <!-- How is it different  -->
-    <section class="pt-[150px]">
+    <section class="pt-[150px] px-4">
       <div class="max-w-5xl mx-auto justify-items-center">
 
         <div class="max-w-[720px]">
             <!-- Divider  -->
-            <img src="images/different_sec_divider.svg" alt="Create a habit screenshot" class=" h-auto mb-[72px] justify-self-center">
+            <img src="images/different_sec_divider.svg" alt="Create a habit screenshot" class=" h-auto mb-[48px] lg:mb-[72px] justify-self-center">
 
             <!-- Title -->
-            <h2 class="text-5xl leading-[1.30] font-black text-content-primary">how is Momentum different?</h2>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.30] font-black text-content-primary text-center">how is Momentum different?</h2>
         </div>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-[72px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 pt-[48px] lg:pt-[72px]">
           <!-- Habit: 1 -->
           <div class="text-center">
 
@@ -121,10 +129,10 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">📸</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">capture habits</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">capture habits</h3>
 
             <!-- Subtitle -->
-            <p class="text-content-secondary text-base">Snap a photo when you show up. That’s it.</p>
+            <p class="text-content-secondary text-base text-base">Snap a photo when you show up. That’s it.</p>
           </div>
 
 
@@ -135,7 +143,7 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">🧘</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">track anything</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">track anything</h3>
 
             <!-- Subtitle -->
             <p class="text-content-secondary text-base">Workouts, journaling, meals — if you can see it, you can track it.</p>
@@ -150,7 +158,7 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">📁</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">habit timeline</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">habit timeline</h3>
 
             <!-- Subtitle -->
             <p class="text-content-secondary text-base">Every habit stays organized in its own timeline.</p>
@@ -164,7 +172,7 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">📅</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">a visual calendar</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">a visual calendar</h3>
 
             <!-- Subtitle -->
             <p class="text-content-secondary text-base">See the days you showed up.</p>
@@ -178,7 +186,7 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">🎞️</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">recap as a video</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">recap as a video</h3>
 
             <!-- Subtitle -->
             <p class="text-content-secondary text-base">Turn your habit journey into a video, anytime.</p>
@@ -193,7 +201,7 @@
             <div class="w-20 h-20 mx-auto mb-4 flex items-center justify-center rounded-3xl bg-tertiary-color text-2xl">🔒</div>
 
             <!-- Title -->
-            <h3 class="font-black text-4xl mb-1">private by default</h3>
+            <h3 class="font-black text-2xl sm:text-3xl lg:text-4xl mb-2">private by default</h3>
 
             <!-- Subtitle -->
             <p class="text-content-secondary text-base">Everything stays on your iCloud. 
@@ -205,14 +213,16 @@
 
     <section class="w-full pt-[150px]">
 
-      <div class="justify-items-center mx-auto">
+      <div class="justify-items-center mx-auto px-4">
         <div class="max-w-[720px]">
           <!-- Divider  -->
-          <img src="images/what_track_divider.svg" alt="what to track divider" class=" h-auto mb-[72px] justify-self-center">
+          <img src="images/what_track_divider.svg" alt="what to track divider" class=" h-auto mb-[48px] lg:mb-[72px] justify-self-center">
   
           <!-- Title and subtitle -->
-          <h2 class="text-5xl leading-[1.30] font-black text-content-primary justify-self-center">what can you track?</h2>
-          <p class="text-2xl leading-[1.65] pt-4 text-content-secondary justify-self-center">Track any habit that leaves a visual trace. From workouts to <br>journaling to your cat — if you can snap it, you can track it.</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.30] font-black text-content-primary justify-self-center">what can you track?</h2>
+          <p class="text-lg sm:text-xl lg:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] pt-4 text-content-secondary justify-self-center text-center">
+            Track any habit that leaves a visual trace. From workouts to <span class="hidden lg:inline"><br></span>journaling to your cat — if you can snap it, you can track it.
+          </p>
         </div>
       </div>
       
@@ -433,28 +443,28 @@
     </section>
 
     <!-- Waitlist section -->
-    <section class="pt-[150px] pb-[150px] text-center">
+    <section class="pt-[84px] lg:pt-[150px] pb-[84px] lg:pb-[150px] text-center px-4">
       <div class="max-w-[720px] mx-auto justify-self-center">
 
         <!-- Divider -->
-        <img src="images/footer_divider.svg" alt="Footer divider" class="max-w-full h-auto mb-[72px] justify-self-center">
+        <img src="images/footer_divider.svg" alt="Footer divider" class="max-w-full h-auto mb-[48px] lg:mb-[72px] justify-self-center">
 
         <!-- Waitlist section title and subtitle -->
-        <h2 class="text-5xl leading-[1.65] font-black text-content-primary">get early access</h2>
-        <p class="text-2xl leading-[1.65] pt-4 text-content-secondary">Be the first to try Momentum. No spam. <br>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] font-black text-content-primary">get early access</h2>
+        <p class="text-xl sm:text-xl lg:text-2xl leading-[1.65] sm:leading-[1.65] lg:leading-[1.65] pt-4 text-content-secondary">Be the first to try Momentum. No spam. <br>
             Just a personal invite when it’s ready.</p>
 
         <!-- Waitlist button -->
         <button 
           data-tally-open="3y1Ogx" 
-          class="mt-[72px] bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">
+          class="mt-[40px] lg:mt-[72px] bg-black text-white font-bold px-7 py-4 rounded-full text-lg hover:opacity-80 transition">
           Join waitlist
         </button>
       </div>
     </section>
 
     <!-- Footer section -->
-    <section class="pb-[150px] text-center">
+    <section class="pb-[150px] text-center px-4">
       <div class="max-w-[720px] mx-auto">
 
         <p class="text-base leading-[1.65] pt-4 text-content-secondary">One day. One photo.  <br>
